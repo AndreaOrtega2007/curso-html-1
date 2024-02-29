@@ -1,0 +1,21 @@
+<script>
+    var hora=0;
+    var minuto=0; 
+    var segundo=0;
+    var tiempoH=0;
+    var tiempoS=0;
+    var tiempoM=0;
+    hora=parseInt(prompt("ingrese valor de horas "), 0);
+    minuto=parseInt(prompt("ingrese valor de minutos "), 0);
+    segundo=parseInt(prompt("ingrese valor de segundos "), 0);
+    tiempoS = hora*3600 + minuto*60 + segundo;
+    tiempoM = hora*60 + segundo/60 + minuto;
+    tiempoH = minuto/60 + segundo/3600 + hora;
+    
+    document.writeln("la solucion obtenida de minuto/hora es " +tiempoM +  "<BR>");
+    document.writeln("la solucion obtenida de segundo/hora es " +tiempoS +  "<BR>");
+    document.writeln("la solucion obtenida de hora/hora es " +tiempoH +  "<BR>");
+   
+   
+    
+</script>

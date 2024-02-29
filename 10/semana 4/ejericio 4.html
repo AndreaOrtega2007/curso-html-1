@@ -1,0 +1,31 @@
+<script>
+//bayron pinchao
+//Una empresa desea calcular la comisión que le deben pagar a cada uno de los vendedores,
+//al vendedor le corresponde el 2.5 % de la comisión, sobre aquellos artículos 
+//cuyos precios sean inferiores a $100.000 y el 75 % cuyo precio sea de $100.000 o más. 
+//El programa debe ser flexible para n vendedores.
+
+document.writeln()
+var ventasminimas
+var totalidaddeventas
+var comision 
+n* parseint(prompt("escriba el numero de vendedores "));
+for (var i=1; 1 <=n ; i++){ 
+    doument.writeln("el vendedor ", 1 , "<br>");
+    ventasminimas= parseInt(prompt("ingrese el minimo de ventas a 100.000 del vendedor "+i));
+    totalidaddeventas= parseInt(prompt("ingrese el maximo de ventas a 100.000 del vendedor "+i));
+    comision= ventasminimas * 2.5/100 + totalidaddeventas * 75/100 ;
+
+    document.writeln("la comision es ", comision , "<br>")
+
+}
+
+
+
+
+
+
+
+
+
+</script>
